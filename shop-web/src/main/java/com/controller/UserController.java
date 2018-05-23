@@ -2,6 +2,7 @@ package com.controller;
 
 
 import com.entity.User;
+import com.github.pagehelper.PageInfo;
 import com.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -30,4 +31,10 @@ public class UserController {
         userService.insertUser(user);
     }
 
+    @GetMapping(value = "/selectAll")
+    @ResponseBody
+    public PageInfo selectAll(){
+        PageInfo pageInfo = userService.selectAll();
+        return pageInfo;
+    }
 }
