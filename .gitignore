@@ -1,0 +1,11 @@
+
+.gitattributes
+*.xml
+*.xml
+*.iml
+*.class
+*.properties
+*.lst
+*.jar
+*.war
+*.2018-05-23
